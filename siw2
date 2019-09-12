@@ -1,0 +1,18 @@
+while True:
+    num1 = (input("Enter first number: "))
+    if num1.isdigit() != True:
+        print("That ain't no number. Sod off! ")
+        break
+    oper = input("Enter operator: ")
+    num2 = (input("Enter second number: "))
+    if oper == "+":
+        solution = int(num1) + int(num2)
+        print(solution)
+    elif oper == "-":
+        print(int(num1) - int(num2))
+    elif oper == "*":
+        print(int(num1) * int(num2))
+    elif oper == "/":
+        print(int(num1) / int(num2))
+    elif oper != "*" or oper != "/" or oper != "+" or oper != "-":
+        print("enter one of these as an operator: '+', '-', '*', '/'")
