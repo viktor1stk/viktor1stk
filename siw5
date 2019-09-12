@@ -1,0 +1,8 @@
+bigidea = input("This is it: ")
+ideas_file = open("stuff.txt", "a")
+
+ideas_file.write(bigidea + "\n")
+ideas_file.close()
+
+stuff_file = open("stuff.txt", "r")
+print(stuff_file.read())
