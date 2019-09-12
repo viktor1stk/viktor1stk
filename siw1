@@ -1,0 +1,6 @@
+name = input("Enter your name: ")
+
+if name == (""):
+    print("Welcome, Entire World!")
+else:
+    print("Welcome, " + name + "!")
