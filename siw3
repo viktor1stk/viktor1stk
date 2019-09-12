@@ -1,0 +1,13 @@
+a = 1
+b = 1
+
+print(0)
+print(a)
+print(b)
+
+for i in range(27):
+    c = a + b
+    a = b
+    b = c
+    print(c)
+
