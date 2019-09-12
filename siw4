@@ -1,0 +1,31 @@
+import random
+
+atk1 = random.randint(1, 7)
+atk2 = random.randint(1, 7)
+atk3 = random.randint(1, 7)
+def1 = random.randint(1, 7)
+def2 = random.randint(1, 7)
+
+atklist = [atk1, atk2, atk3]
+deflist = [def1, def2]
+
+
+atklist.sort(reverse=True)
+deflist.sort(reverse=True)
+
+
+print("dice")
+print("attacker: ", atklist[0], atklist[1], atklist[2])
+print("defender: ", deflist[0], deflist[1])
+
+#atk1 = atklist0
+
+if atklist[0] > deflist[0] and atklist[1] > deflist[1]:
+    print("defender loses 2 units")
+elif atklist[0] > deflist[0] and atklist[1] <= deflist[1]:
+    print("both sides lose 1 unit each")
+elif atklist[0] <= deflist[0] and atklist[1] > deflist[1]:
+    print("both sides lose 1 unit each")
+else:
+    print("attacker loses 2 units")
+
